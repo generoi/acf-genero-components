@@ -12,6 +12,7 @@ class SectionComponent implements ComponentInterface
     public static $groupKeys = [
         'group_5845730481011', // Section
         'group_584c3280ba455', // Section: Text
+        'group_5856c757251cb', // Section: Text with image
         'group_584c18d4beacd', // Section: Post listing
         'group_584c35da444dd', // Section: Blockquote
         'group_584c1a85a57a8', // Section Field: Title
