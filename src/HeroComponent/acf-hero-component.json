@@ -44,6 +44,22 @@
                         }
                     },
                     {
+                        "default_value": "",
+                        "placeholder": "",
+                        "key": "field_5856c879e8756",
+                        "label": "Link",
+                        "name": "slide_link",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        }
+                    },
+                    {
                         "multiple": 0,
                         "allow_null": 0,
                         "choices": {
@@ -265,7 +281,7 @@
                 "max": 0,
                 "layout": "row",
                 "button_label": "Add Slide",
-                "collapsed": "field_5841d45cad9b4",
+                "collapsed": "field_5841d439ad9b3",
                 "key": "field_5841d407ad9b2",
                 "label": "Slide",
                 "name": "hero_slide",
