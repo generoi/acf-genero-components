@@ -1,0 +1,3146 @@
+[
+    {
+        "key": "group_5845730481011",
+        "title": "Section",
+        "fields": [
+            {
+                "layouts": [
+                    {
+                        "key": "5845732becdd6",
+                        "name": "section--text",
+                        "label": "Text",
+                        "display": "row",
+                        "sub_fields": [
+                            {
+                                "clone": [
+                                    "group_584c3280ba455"
+                                ],
+                                "prefix_label": 0,
+                                "prefix_name": 0,
+                                "display": "group",
+                                "layout": "block",
+                                "key": "field_584c35189713f",
+                                "label": "Section",
+                                "name": "section__text",
+                                "type": "clone",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "sub_fields": [
+                                    {
+                                        "clone": [
+                                            "group_584c1a85a57a8"
+                                        ],
+                                        "prefix_label": 0,
+                                        "prefix_name": 0,
+                                        "display": "group",
+                                        "layout": "row",
+                                        "ID": 0,
+                                        "key": "field_584c35189713f_field_584c328ec17c2",
+                                        "label": "Title",
+                                        "name": "section__title",
+                                        "prefix": "acf[field_584c35189713f]",
+                                        "type": "clone",
+                                        "value": null,
+                                        "menu_order": 0,
+                                        "instructions": "",
+                                        "required": 0,
+                                        "id": "",
+                                        "class": "",
+                                        "conditional_logic": 0,
+                                        "parent": "group_584c3280ba455",
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "_name": "section__title",
+                                        "_prepare": 0,
+                                        "_valid": 1,
+                                        "sub_fields": [
+                                            {
+                                                "default_value": "",
+                                                "maxlength": "",
+                                                "placeholder": "",
+                                                "prepend": "",
+                                                "append": "",
+                                                "ID": 0,
+                                                "key": "field_584c35189713f_field_584c328ec17c2_field_584c1a8ea96ef",
+                                                "label": "Title",
+                                                "name": "title_text",
+                                                "prefix": "acf[field_584c328ec17c2][field_584c35189713f]",
+                                                "type": "text",
+                                                "value": null,
+                                                "menu_order": 0,
+                                                "instructions": "",
+                                                "required": 0,
+                                                "id": "",
+                                                "class": "",
+                                                "conditional_logic": 0,
+                                                "parent": "group_584c1a85a57a8",
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "_name": "title_text",
+                                                "_prepare": 0,
+                                                "_valid": 1,
+                                                "_clone": "field_584c35189713f",
+                                                "__key": "field_584c1a8ea96ef",
+                                                "__name": "title_text",
+                                                "__label": "Title",
+                                                "parent_layout": "5845732becdd6"
+                                            },
+                                            {
+                                                "default_value": 0,
+                                                "message": "",
+                                                "ui": 0,
+                                                "ui_on_text": "",
+                                                "ui_off_text": "",
+                                                "ID": 0,
+                                                "key": "field_584c35189713f_field_584c328ec17c2_field_584c1a9da96f0",
+                                                "label": "Link",
+                                                "name": "title_link",
+                                                "prefix": "acf[field_584c328ec17c2][field_584c35189713f]",
+                                                "type": "true_false",
+                                                "value": null,
+                                                "menu_order": 1,
+                                                "instructions": "",
+                                                "required": 0,
+                                                "id": "",
+                                                "class": "",
+                                                "conditional_logic": 0,
+                                                "parent": "group_584c1a85a57a8",
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "_name": "title_link",
+                                                "_prepare": 0,
+                                                "_valid": 1,
+                                                "_clone": "field_584c35189713f",
+                                                "__key": "field_584c1a9da96f0",
+                                                "__name": "title_link",
+                                                "__label": "Link",
+                                                "parent_layout": "5845732becdd6"
+                                            },
+                                            {
+                                                "post_type": [
+                                                    "post",
+                                                    "page"
+                                                ],
+                                                "taxonomy": [],
+                                                "allow_null": 0,
+                                                "multiple": 0,
+                                                "allow_archives": 1,
+                                                "ID": 0,
+                                                "key": "field_584c35189713f_field_584c328ec17c2_field_584c1ab2a96f1",
+                                                "label": "Page",
+                                                "name": "title_link_url",
+                                                "prefix": "acf[field_584c328ec17c2][field_584c35189713f]",
+                                                "type": "page_link",
+                                                "value": null,
+                                                "menu_order": 2,
+                                                "instructions": "",
+                                                "required": 0,
+                                                "id": "",
+                                                "class": "",
+                                                "conditional_logic": [
+                                                    [
+                                                        {
+                                                            "field": "field_584c1a9da96f0",
+                                                            "operator": "==",
+                                                            "value": "1"
+                                                        }
+                                                    ]
+                                                ],
+                                                "parent": "group_584c1a85a57a8",
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "_name": "title_link_url",
+                                                "_prepare": 0,
+                                                "_valid": 1,
+                                                "_clone": "field_584c35189713f",
+                                                "__key": "field_584c1ab2a96f1",
+                                                "__name": "title_link_url",
+                                                "__label": "Page",
+                                                "parent_layout": "5845732becdd6"
+                                            }
+                                        ],
+                                        "_clone": "field_584c35189713f",
+                                        "parent_layout": "5845732becdd6",
+                                        "__key": "field_584c328ec17c2",
+                                        "__name": "section__title",
+                                        "__label": "Title"
+                                    },
+                                    {
+                                        "tabs": "all",
+                                        "toolbar": "full",
+                                        "media_upload": 1,
+                                        "default_value": "",
+                                        "delay": 1,
+                                        "ID": 0,
+                                        "key": "field_584c35189713f_field_584c32b0c17c3",
+                                        "label": "Content",
+                                        "name": "section__content",
+                                        "prefix": "acf[field_584c35189713f]",
+                                        "type": "wysiwyg",
+                                        "value": null,
+                                        "menu_order": 1,
+                                        "instructions": "",
+                                        "required": 0,
+                                        "id": "",
+                                        "class": "",
+                                        "conditional_logic": 0,
+                                        "parent": "group_584c3280ba455",
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "_name": "section__content",
+                                        "_prepare": 0,
+                                        "_valid": 1,
+                                        "_clone": "field_584c35189713f",
+                                        "parent_layout": "5845732becdd6",
+                                        "__key": "field_584c32b0c17c3",
+                                        "__name": "section__content",
+                                        "__label": "Content"
+                                    },
+                                    {
+                                        "clone": [
+                                            "group_584c1c1b39cc5"
+                                        ],
+                                        "prefix_label": 0,
+                                        "prefix_name": 0,
+                                        "display": "group",
+                                        "layout": "row",
+                                        "ID": 0,
+                                        "key": "field_584c35189713f_field_584c32d6164c6",
+                                        "label": "Background",
+                                        "name": "section__background",
+                                        "prefix": "acf[field_584c35189713f]",
+                                        "type": "clone",
+                                        "value": null,
+                                        "menu_order": 2,
+                                        "instructions": "",
+                                        "required": 0,
+                                        "id": "",
+                                        "class": "",
+                                        "conditional_logic": 0,
+                                        "parent": "group_584c3280ba455",
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "_name": "section__background",
+                                        "_prepare": 0,
+                                        "_valid": 1,
+                                        "sub_fields": [
+                                            {
+                                                "multiple": 0,
+                                                "allow_null": 0,
+                                                "choices": {
+                                                    "none": "None",
+                                                    "color": "Color",
+                                                    "image": "Image"
+                                                },
+                                                "default_value": [
+                                                    "none"
+                                                ],
+                                                "ui": 1,
+                                                "ajax": 0,
+                                                "placeholder": "",
+                                                "return_format": "value",
+                                                "ID": 0,
+                                                "key": "field_584c35189713f_field_584c32d6164c6_field_584c1c66ce26b",
+                                                "label": "Background",
+                                                "name": "background_type",
+                                                "prefix": "acf[field_584c32d6164c6][field_584c35189713f]",
+                                                "type": "select",
+                                                "value": null,
+                                                "menu_order": 0,
+                                                "instructions": "",
+                                                "required": 0,
+                                                "id": "",
+                                                "class": "",
+                                                "conditional_logic": 0,
+                                                "parent": "group_584c1c1b39cc5",
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "_name": "background_type",
+                                                "_prepare": 0,
+                                                "_valid": 1,
+                                                "_clone": "field_584c35189713f",
+                                                "__key": "field_584c1c66ce26b",
+                                                "__name": "background_type",
+                                                "__label": "Background",
+                                                "parent_layout": "5845732becdd6"
+                                            },
+                                            {
+                                                "multiple": 0,
+                                                "allow_null": 0,
+                                                "choices": {
+                                                    "primary": "Primary color",
+                                                    "secondary": "Secondary color",
+                                                    "white": "White",
+                                                    "black": "Black"
+                                                },
+                                                "default_value": [],
+                                                "ui": 1,
+                                                "ajax": 0,
+                                                "placeholder": "",
+                                                "return_format": "value",
+                                                "ID": 0,
+                                                "key": "field_584c35189713f_field_584c32d6164c6_field_584c1c2e52532",
+                                                "label": "Color",
+                                                "name": "background_color",
+                                                "prefix": "acf[field_584c32d6164c6][field_584c35189713f]",
+                                                "type": "select",
+                                                "value": null,
+                                                "menu_order": 1,
+                                                "instructions": "",
+                                                "required": 0,
+                                                "id": "",
+                                                "class": "",
+                                                "conditional_logic": [
+                                                    [
+                                                        {
+                                                            "field": "field_584c1c66ce26b",
+                                                            "operator": "==",
+                                                            "value": "color"
+                                                        }
+                                                    ]
+                                                ],
+                                                "parent": "group_584c1c1b39cc5",
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "_name": "background_color",
+                                                "_prepare": 0,
+                                                "_valid": 1,
+                                                "_clone": "field_584c35189713f",
+                                                "__key": "field_584c1c2e52532",
+                                                "__name": "background_color",
+                                                "__label": "Color",
+                                                "parent_layout": "5845732becdd6"
+                                            },
+                                            {
+                                                "force_crop": "no",
+                                                "crop_type": "min",
+                                                "preview_size": "medium",
+                                                "save_format": "url",
+                                                "save_in_media_library": "no",
+                                                "target_size": "thumbnail",
+                                                "library": "all",
+                                                "retina_mode": "no",
+                                                "ID": 0,
+                                                "key": "field_584c35189713f_field_584c32d6164c6_field_584c1c8fce26c",
+                                                "label": "Image",
+                                                "name": "background_image",
+                                                "prefix": "acf[field_584c32d6164c6][field_584c35189713f]",
+                                                "type": "image_crop",
+                                                "value": null,
+                                                "menu_order": 2,
+                                                "instructions": "",
+                                                "required": 0,
+                                                "id": "",
+                                                "class": "",
+                                                "conditional_logic": [
+                                                    [
+                                                        {
+                                                            "field": "field_584c1c66ce26b",
+                                                            "operator": "==",
+                                                            "value": "image"
+                                                        }
+                                                    ]
+                                                ],
+                                                "parent": "group_584c1c1b39cc5",
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "_name": "background_image",
+                                                "_prepare": 0,
+                                                "_valid": 1,
+                                                "width": "",
+                                                "height": "",
+                                                "_clone": "field_584c35189713f",
+                                                "__key": "field_584c1c8fce26c",
+                                                "__name": "background_image",
+                                                "__label": "Image",
+                                                "parent_layout": "5845732becdd6"
+                                            },
+                                            {
+                                                "multiple": 0,
+                                                "allow_null": 0,
+                                                "choices": {
+                                                    "none": "None",
+                                                    "primary": "Primary color",
+                                                    "secondary": "Secondary color",
+                                                    "white": "Light",
+                                                    "black": "Dark"
+                                                },
+                                                "default_value": [
+                                                    "dark"
+                                                ],
+                                                "ui": 1,
+                                                "ajax": 0,
+                                                "placeholder": "",
+                                                "return_format": "value",
+                                                "ID": 0,
+                                                "key": "field_584c35189713f_field_584c32d6164c6_field_584c1cc2ce26d",
+                                                "label": "Overlay",
+                                                "name": "background_overlay",
+                                                "prefix": "acf[field_584c32d6164c6][field_584c35189713f]",
+                                                "type": "select",
+                                                "value": null,
+                                                "menu_order": 3,
+                                                "instructions": "",
+                                                "required": 0,
+                                                "id": "",
+                                                "class": "",
+                                                "conditional_logic": [
+                                                    [
+                                                        {
+                                                            "field": "field_584c1c66ce26b",
+                                                            "operator": "==",
+                                                            "value": "image"
+                                                        }
+                                                    ]
+                                                ],
+                                                "parent": "group_584c1c1b39cc5",
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "_name": "background_overlay",
+                                                "_prepare": 0,
+                                                "_valid": 1,
+                                                "_clone": "field_584c35189713f",
+                                                "__key": "field_584c1cc2ce26d",
+                                                "__name": "background_overlay",
+                                                "__label": "Overlay",
+                                                "parent_layout": "5845732becdd6"
+                                            }
+                                        ],
+                                        "_clone": "field_584c35189713f",
+                                        "parent_layout": "5845732becdd6",
+                                        "__key": "field_584c32d6164c6",
+                                        "__name": "section__background",
+                                        "__label": "Background"
+                                    }
+                                ]
+                            },
+                            {
+                                "clone": [
+                                    "group_584c1f53eab6a"
+                                ],
+                                "prefix_label": 0,
+                                "prefix_name": 0,
+                                "display": "group",
+                                "layout": "block",
+                                "key": "field_584c4b8bdfd13",
+                                "label": "Grid placement",
+                                "name": "section__grid",
+                                "type": "clone",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "sub_fields": [
+                                    {
+                                        "default_value": 0,
+                                        "message": "Set grid placement properties",
+                                        "ui": 0,
+                                        "ui_on_text": "",
+                                        "ui_off_text": "",
+                                        "ID": 0,
+                                        "key": "field_584c4b8bdfd13_field_584c1f8c2a6d9",
+                                        "label": "Grid placement",
+                                        "name": "grid_active",
+                                        "prefix": "acf[field_584c4b8bdfd13]",
+                                        "type": "true_false",
+                                        "value": null,
+                                        "menu_order": 0,
+                                        "instructions": "",
+                                        "required": 0,
+                                        "id": "",
+                                        "class": "",
+                                        "conditional_logic": 0,
+                                        "parent": "group_584c1f53eab6a",
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "_name": "grid_active",
+                                        "_prepare": 0,
+                                        "_valid": 1,
+                                        "_clone": "field_584c4b8bdfd13",
+                                        "parent_layout": "5845732becdd6",
+                                        "__key": "field_584c1f8c2a6d9",
+                                        "__name": "grid_active",
+                                        "__label": "Grid placement"
+                                    },
+                                    {
+                                        "ID": 0,
+                                        "key": "field_584c4b8bdfd13_field_584c4933b600b",
+                                        "label": "Settings",
+                                        "name": "grid_column",
+                                        "prefix": "acf[field_584c4b8bdfd13]",
+                                        "type": "foundation_column",
+                                        "value": null,
+                                        "menu_order": 1,
+                                        "instructions": "",
+                                        "required": 0,
+                                        "id": "",
+                                        "class": "",
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_584c1f8c2a6d9",
+                                                    "operator": "==",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        ],
+                                        "parent": "group_584c1f53eab6a",
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "_name": "grid_column",
+                                        "_prepare": 0,
+                                        "_valid": 1,
+                                        "_clone": "field_584c4b8bdfd13",
+                                        "parent_layout": "5845732becdd6",
+                                        "__key": "field_584c4933b600b",
+                                        "__name": "grid_column",
+                                        "__label": "Settings"
+                                    }
+                                ]
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    {
+                        "key": "584575dc20203",
+                        "name": "section--blockquote",
+                        "label": "Blockquote",
+                        "display": "row",
+                        "sub_fields": [
+                            {
+                                "clone": [
+                                    "group_584c35da444dd"
+                                ],
+                                "prefix_label": 0,
+                                "prefix_name": 0,
+                                "display": "group",
+                                "layout": "block",
+                                "key": "field_584c3644dd469",
+                                "label": "Section",
+                                "name": "section__blockquote",
+                                "type": "clone",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "sub_fields": [
+                                    {
+                                        "tabs": "all",
+                                        "toolbar": "full",
+                                        "media_upload": 1,
+                                        "default_value": "",
+                                        "delay": 1,
+                                        "ID": 0,
+                                        "key": "field_584c3644dd469_field_584c35da52df5",
+                                        "label": "Content",
+                                        "name": "section__content",
+                                        "prefix": "acf[field_584c3644dd469]",
+                                        "type": "wysiwyg",
+                                        "value": null,
+                                        "menu_order": 0,
+                                        "instructions": "",
+                                        "required": 0,
+                                        "id": "",
+                                        "class": "",
+                                        "conditional_logic": 0,
+                                        "parent": "group_584c35da444dd",
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "_name": "section__content",
+                                        "_prepare": 0,
+                                        "_valid": 1,
+                                        "_clone": "field_584c3644dd469",
+                                        "parent_layout": "584575dc20203",
+                                        "__key": "field_584c35da52df5",
+                                        "__name": "section__content",
+                                        "__label": "Content"
+                                    },
+                                    {
+                                        "clone": [
+                                            "group_584c1c1b39cc5"
+                                        ],
+                                        "prefix_label": 0,
+                                        "prefix_name": 0,
+                                        "display": "group",
+                                        "layout": "row",
+                                        "ID": 0,
+                                        "key": "field_584c3644dd469_field_584c35da52eb1",
+                                        "label": "Background",
+                                        "name": "section__background",
+                                        "prefix": "acf[field_584c3644dd469]",
+                                        "type": "clone",
+                                        "value": null,
+                                        "menu_order": 1,
+                                        "instructions": "",
+                                        "required": 0,
+                                        "id": "",
+                                        "class": "",
+                                        "conditional_logic": 0,
+                                        "parent": "group_584c35da444dd",
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "_name": "section__background",
+                                        "_prepare": 0,
+                                        "_valid": 1,
+                                        "sub_fields": [
+                                            {
+                                                "multiple": 0,
+                                                "allow_null": 0,
+                                                "choices": {
+                                                    "none": "None",
+                                                    "color": "Color",
+                                                    "image": "Image"
+                                                },
+                                                "default_value": [
+                                                    "none"
+                                                ],
+                                                "ui": 1,
+                                                "ajax": 0,
+                                                "placeholder": "",
+                                                "return_format": "value",
+                                                "ID": 0,
+                                                "key": "field_584c3644dd469_field_584c35da52eb1_field_584c1c66ce26b",
+                                                "label": "Background",
+                                                "name": "background_type",
+                                                "prefix": "acf[field_584c35da52eb1][field_584c3644dd469]",
+                                                "type": "select",
+                                                "value": null,
+                                                "menu_order": 0,
+                                                "instructions": "",
+                                                "required": 0,
+                                                "id": "",
+                                                "class": "",
+                                                "conditional_logic": 0,
+                                                "parent": "group_584c1c1b39cc5",
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "_name": "background_type",
+                                                "_prepare": 0,
+                                                "_valid": 1,
+                                                "_clone": "field_584c3644dd469",
+                                                "__key": "field_584c1c66ce26b",
+                                                "__name": "background_type",
+                                                "__label": "Background",
+                                                "parent_layout": "584575dc20203"
+                                            },
+                                            {
+                                                "multiple": 0,
+                                                "allow_null": 0,
+                                                "choices": {
+                                                    "primary": "Primary color",
+                                                    "secondary": "Secondary color",
+                                                    "white": "White",
+                                                    "black": "Black"
+                                                },
+                                                "default_value": [],
+                                                "ui": 1,
+                                                "ajax": 0,
+                                                "placeholder": "",
+                                                "return_format": "value",
+                                                "ID": 0,
+                                                "key": "field_584c3644dd469_field_584c35da52eb1_field_584c1c2e52532",
+                                                "label": "Color",
+                                                "name": "background_color",
+                                                "prefix": "acf[field_584c35da52eb1][field_584c3644dd469]",
+                                                "type": "select",
+                                                "value": null,
+                                                "menu_order": 1,
+                                                "instructions": "",
+                                                "required": 0,
+                                                "id": "",
+                                                "class": "",
+                                                "conditional_logic": [
+                                                    [
+                                                        {
+                                                            "field": "field_584c1c66ce26b",
+                                                            "operator": "==",
+                                                            "value": "color"
+                                                        }
+                                                    ]
+                                                ],
+                                                "parent": "group_584c1c1b39cc5",
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "_name": "background_color",
+                                                "_prepare": 0,
+                                                "_valid": 1,
+                                                "_clone": "field_584c3644dd469",
+                                                "__key": "field_584c1c2e52532",
+                                                "__name": "background_color",
+                                                "__label": "Color",
+                                                "parent_layout": "584575dc20203"
+                                            },
+                                            {
+                                                "force_crop": "no",
+                                                "crop_type": "min",
+                                                "preview_size": "medium",
+                                                "save_format": "url",
+                                                "save_in_media_library": "no",
+                                                "target_size": "thumbnail",
+                                                "library": "all",
+                                                "retina_mode": "no",
+                                                "ID": 0,
+                                                "key": "field_584c3644dd469_field_584c35da52eb1_field_584c1c8fce26c",
+                                                "label": "Image",
+                                                "name": "background_image",
+                                                "prefix": "acf[field_584c35da52eb1][field_584c3644dd469]",
+                                                "type": "image_crop",
+                                                "value": null,
+                                                "menu_order": 2,
+                                                "instructions": "",
+                                                "required": 0,
+                                                "id": "",
+                                                "class": "",
+                                                "conditional_logic": [
+                                                    [
+                                                        {
+                                                            "field": "field_584c1c66ce26b",
+                                                            "operator": "==",
+                                                            "value": "image"
+                                                        }
+                                                    ]
+                                                ],
+                                                "parent": "group_584c1c1b39cc5",
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "_name": "background_image",
+                                                "_prepare": 0,
+                                                "_valid": 1,
+                                                "width": "",
+                                                "height": "",
+                                                "_clone": "field_584c3644dd469",
+                                                "__key": "field_584c1c8fce26c",
+                                                "__name": "background_image",
+                                                "__label": "Image",
+                                                "parent_layout": "584575dc20203"
+                                            },
+                                            {
+                                                "multiple": 0,
+                                                "allow_null": 0,
+                                                "choices": {
+                                                    "none": "None",
+                                                    "primary": "Primary color",
+                                                    "secondary": "Secondary color",
+                                                    "white": "Light",
+                                                    "black": "Dark"
+                                                },
+                                                "default_value": [
+                                                    "dark"
+                                                ],
+                                                "ui": 1,
+                                                "ajax": 0,
+                                                "placeholder": "",
+                                                "return_format": "value",
+                                                "ID": 0,
+                                                "key": "field_584c3644dd469_field_584c35da52eb1_field_584c1cc2ce26d",
+                                                "label": "Overlay",
+                                                "name": "background_overlay",
+                                                "prefix": "acf[field_584c35da52eb1][field_584c3644dd469]",
+                                                "type": "select",
+                                                "value": null,
+                                                "menu_order": 3,
+                                                "instructions": "",
+                                                "required": 0,
+                                                "id": "",
+                                                "class": "",
+                                                "conditional_logic": [
+                                                    [
+                                                        {
+                                                            "field": "field_584c1c66ce26b",
+                                                            "operator": "==",
+                                                            "value": "image"
+                                                        }
+                                                    ]
+                                                ],
+                                                "parent": "group_584c1c1b39cc5",
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "_name": "background_overlay",
+                                                "_prepare": 0,
+                                                "_valid": 1,
+                                                "_clone": "field_584c3644dd469",
+                                                "__key": "field_584c1cc2ce26d",
+                                                "__name": "background_overlay",
+                                                "__label": "Overlay",
+                                                "parent_layout": "584575dc20203"
+                                            }
+                                        ],
+                                        "_clone": "field_584c3644dd469",
+                                        "parent_layout": "584575dc20203",
+                                        "__key": "field_584c35da52eb1",
+                                        "__name": "section__background",
+                                        "__label": "Background"
+                                    }
+                                ]
+                            },
+                            {
+                                "clone": [
+                                    "group_584c1f53eab6a"
+                                ],
+                                "prefix_label": 0,
+                                "prefix_name": 0,
+                                "display": "group",
+                                "layout": "block",
+                                "key": "field_584c4baddfd14",
+                                "label": "Grid placement",
+                                "name": "section__grid",
+                                "type": "clone",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "sub_fields": [
+                                    {
+                                        "default_value": 0,
+                                        "message": "Set grid placement properties",
+                                        "ui": 0,
+                                        "ui_on_text": "",
+                                        "ui_off_text": "",
+                                        "ID": 0,
+                                        "key": "field_584c4baddfd14_field_584c1f8c2a6d9",
+                                        "label": "Grid placement",
+                                        "name": "grid_active",
+                                        "prefix": "acf[field_584c4baddfd14]",
+                                        "type": "true_false",
+                                        "value": null,
+                                        "menu_order": 0,
+                                        "instructions": "",
+                                        "required": 0,
+                                        "id": "",
+                                        "class": "",
+                                        "conditional_logic": 0,
+                                        "parent": "group_584c1f53eab6a",
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "_name": "grid_active",
+                                        "_prepare": 0,
+                                        "_valid": 1,
+                                        "_clone": "field_584c4baddfd14",
+                                        "parent_layout": "584575dc20203",
+                                        "__key": "field_584c1f8c2a6d9",
+                                        "__name": "grid_active",
+                                        "__label": "Grid placement"
+                                    },
+                                    {
+                                        "ID": 0,
+                                        "key": "field_584c4baddfd14_field_584c4933b600b",
+                                        "label": "Settings",
+                                        "name": "grid_column",
+                                        "prefix": "acf[field_584c4baddfd14]",
+                                        "type": "foundation_column",
+                                        "value": null,
+                                        "menu_order": 1,
+                                        "instructions": "",
+                                        "required": 0,
+                                        "id": "",
+                                        "class": "",
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_584c1f8c2a6d9",
+                                                    "operator": "==",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        ],
+                                        "parent": "group_584c1f53eab6a",
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "_name": "grid_column",
+                                        "_prepare": 0,
+                                        "_valid": 1,
+                                        "_clone": "field_584c4baddfd14",
+                                        "parent_layout": "584575dc20203",
+                                        "__key": "field_584c4933b600b",
+                                        "__name": "grid_column",
+                                        "__label": "Settings"
+                                    }
+                                ]
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    {
+                        "key": "5845761a2020a",
+                        "name": "section--post_listing",
+                        "label": "Post listing",
+                        "display": "row",
+                        "sub_fields": [
+                            {
+                                "clone": [
+                                    "group_584c18d4beacd"
+                                ],
+                                "prefix_label": 0,
+                                "prefix_name": 0,
+                                "display": "group",
+                                "layout": "block",
+                                "key": "field_584c356197140",
+                                "label": "Section",
+                                "name": "section__post_listing",
+                                "type": "clone",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "sub_fields": [
+                                    {
+                                        "clone": [
+                                            "group_584c1a85a57a8"
+                                        ],
+                                        "prefix_label": 0,
+                                        "prefix_name": 0,
+                                        "display": "group",
+                                        "layout": "row",
+                                        "ID": 0,
+                                        "key": "field_584c356197140_field_584c1d9ab7f3f",
+                                        "label": "Title",
+                                        "name": "section__title",
+                                        "prefix": "acf[field_584c356197140]",
+                                        "type": "clone",
+                                        "value": null,
+                                        "menu_order": 0,
+                                        "instructions": "",
+                                        "required": 0,
+                                        "id": "",
+                                        "class": "",
+                                        "conditional_logic": 0,
+                                        "parent": "group_584c18d4beacd",
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "_name": "section__title",
+                                        "_prepare": 0,
+                                        "_valid": 1,
+                                        "sub_fields": [
+                                            {
+                                                "default_value": "",
+                                                "maxlength": "",
+                                                "placeholder": "",
+                                                "prepend": "",
+                                                "append": "",
+                                                "ID": 0,
+                                                "key": "field_584c356197140_field_584c1d9ab7f3f_field_584c1a8ea96ef",
+                                                "label": "Title",
+                                                "name": "title_text",
+                                                "prefix": "acf[field_584c1d9ab7f3f][field_584c356197140]",
+                                                "type": "text",
+                                                "value": null,
+                                                "menu_order": 0,
+                                                "instructions": "",
+                                                "required": 0,
+                                                "id": "",
+                                                "class": "",
+                                                "conditional_logic": 0,
+                                                "parent": "group_584c1a85a57a8",
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "_name": "title_text",
+                                                "_prepare": 0,
+                                                "_valid": 1,
+                                                "_clone": "field_584c356197140",
+                                                "__key": "field_584c1a8ea96ef",
+                                                "__name": "title_text",
+                                                "__label": "Title",
+                                                "parent_layout": "5845761a2020a"
+                                            },
+                                            {
+                                                "default_value": 0,
+                                                "message": "",
+                                                "ui": 0,
+                                                "ui_on_text": "",
+                                                "ui_off_text": "",
+                                                "ID": 0,
+                                                "key": "field_584c356197140_field_584c1d9ab7f3f_field_584c1a9da96f0",
+                                                "label": "Link",
+                                                "name": "title_link",
+                                                "prefix": "acf[field_584c1d9ab7f3f][field_584c356197140]",
+                                                "type": "true_false",
+                                                "value": null,
+                                                "menu_order": 1,
+                                                "instructions": "",
+                                                "required": 0,
+                                                "id": "",
+                                                "class": "",
+                                                "conditional_logic": 0,
+                                                "parent": "group_584c1a85a57a8",
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "_name": "title_link",
+                                                "_prepare": 0,
+                                                "_valid": 1,
+                                                "_clone": "field_584c356197140",
+                                                "__key": "field_584c1a9da96f0",
+                                                "__name": "title_link",
+                                                "__label": "Link",
+                                                "parent_layout": "5845761a2020a"
+                                            },
+                                            {
+                                                "post_type": [
+                                                    "post",
+                                                    "page"
+                                                ],
+                                                "taxonomy": [],
+                                                "allow_null": 0,
+                                                "multiple": 0,
+                                                "allow_archives": 1,
+                                                "ID": 0,
+                                                "key": "field_584c356197140_field_584c1d9ab7f3f_field_584c1ab2a96f1",
+                                                "label": "Page",
+                                                "name": "title_link_url",
+                                                "prefix": "acf[field_584c1d9ab7f3f][field_584c356197140]",
+                                                "type": "page_link",
+                                                "value": null,
+                                                "menu_order": 2,
+                                                "instructions": "",
+                                                "required": 0,
+                                                "id": "",
+                                                "class": "",
+                                                "conditional_logic": [
+                                                    [
+                                                        {
+                                                            "field": "field_584c1a9da96f0",
+                                                            "operator": "==",
+                                                            "value": "1"
+                                                        }
+                                                    ]
+                                                ],
+                                                "parent": "group_584c1a85a57a8",
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "_name": "title_link_url",
+                                                "_prepare": 0,
+                                                "_valid": 1,
+                                                "_clone": "field_584c356197140",
+                                                "__key": "field_584c1ab2a96f1",
+                                                "__name": "title_link_url",
+                                                "__label": "Page",
+                                                "parent_layout": "5845761a2020a"
+                                            }
+                                        ],
+                                        "_clone": "field_584c356197140",
+                                        "parent_layout": "5845761a2020a",
+                                        "__key": "field_584c1d9ab7f3f",
+                                        "__name": "section__title",
+                                        "__label": "Title"
+                                    },
+                                    {
+                                        "choices": [
+                                            "page",
+                                            "post"
+                                        ],
+                                        "allow_null": 0,
+                                        "multiple": 0,
+                                        "ui": 1,
+                                        "ajax": 0,
+                                        "ID": 0,
+                                        "key": "field_584c356197140_field_584c197423042",
+                                        "label": "Post type",
+                                        "name": "section__post_type",
+                                        "prefix": "acf[field_584c356197140]",
+                                        "type": "post_type_chooser",
+                                        "value": null,
+                                        "menu_order": 1,
+                                        "instructions": "",
+                                        "required": 1,
+                                        "id": "",
+                                        "class": "",
+                                        "conditional_logic": 0,
+                                        "parent": "group_584c18d4beacd",
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "_name": "section__post_type",
+                                        "_prepare": 0,
+                                        "_valid": 1,
+                                        "_clone": "field_584c356197140",
+                                        "parent_layout": "5845761a2020a",
+                                        "__key": "field_584c197423042",
+                                        "__name": "section__post_type",
+                                        "__label": "Post type"
+                                    },
+                                    {
+                                        "slider_min_value": -1,
+                                        "slider_max_value": 15,
+                                        "increment_value": 1,
+                                        "slider_units": "&nbsp;post(s)",
+                                        "default_value": -1,
+                                        "ID": 0,
+                                        "key": "field_584c356197140_field_584c19a923043",
+                                        "label": "Post limit",
+                                        "name": "section__post_limit",
+                                        "prefix": "acf[field_584c356197140]",
+                                        "type": "number_slider",
+                                        "value": null,
+                                        "menu_order": 2,
+                                        "instructions": "",
+                                        "required": 1,
+                                        "id": "",
+                                        "class": "",
+                                        "conditional_logic": 0,
+                                        "parent": "group_584c18d4beacd",
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "_name": "section__post_limit",
+                                        "_prepare": 0,
+                                        "_valid": 1,
+                                        "_clone": "field_584c356197140",
+                                        "parent_layout": "5845761a2020a",
+                                        "__key": "field_584c19a923043",
+                                        "__name": "section__post_limit",
+                                        "__label": "Post limit"
+                                    },
+                                    {
+                                        "multiple": 0,
+                                        "allow_null": 0,
+                                        "choices": {
+                                            "desc": "Newest first",
+                                            "asc": "Oldest first"
+                                        },
+                                        "default_value": [
+                                            "desc"
+                                        ],
+                                        "ui": 1,
+                                        "ajax": 0,
+                                        "placeholder": "",
+                                        "return_format": "value",
+                                        "ID": 0,
+                                        "key": "field_584c356197140_field_584c19e523044",
+                                        "label": "Post order",
+                                        "name": "section__post_order",
+                                        "prefix": "acf[field_584c356197140]",
+                                        "type": "select",
+                                        "value": null,
+                                        "menu_order": 3,
+                                        "instructions": "",
+                                        "required": 0,
+                                        "id": "",
+                                        "class": "",
+                                        "conditional_logic": 0,
+                                        "parent": "group_584c18d4beacd",
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "_name": "section__post_order",
+                                        "_prepare": 0,
+                                        "_valid": 1,
+                                        "_clone": "field_584c356197140",
+                                        "parent_layout": "5845761a2020a",
+                                        "__key": "field_584c19e523044",
+                                        "__name": "section__post_order",
+                                        "__label": "Post order"
+                                    },
+                                    {
+                                        "ID": 0,
+                                        "key": "field_584c356197140_field_584c2aa20eab3",
+                                        "label": "Post grid",
+                                        "name": "section__block_grid",
+                                        "prefix": "acf[field_584c356197140]",
+                                        "type": "foundation_row",
+                                        "value": null,
+                                        "menu_order": 4,
+                                        "instructions": "",
+                                        "required": 0,
+                                        "id": "",
+                                        "class": "",
+                                        "conditional_logic": 0,
+                                        "parent": "group_584c18d4beacd",
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "_name": "section__block_grid",
+                                        "_prepare": 0,
+                                        "_valid": 1,
+                                        "_clone": "field_584c356197140",
+                                        "parent_layout": "5845761a2020a",
+                                        "__key": "field_584c2aa20eab3",
+                                        "__name": "section__block_grid",
+                                        "__label": "Post grid"
+                                    },
+                                    {
+                                        "default_value": 0,
+                                        "message": "",
+                                        "ui": 0,
+                                        "ui_on_text": "",
+                                        "ui_off_text": "",
+                                        "ID": 0,
+                                        "key": "field_584c356197140_field_584c1a0b23045",
+                                        "label": "Pagination",
+                                        "name": "section__post_pager",
+                                        "prefix": "acf[field_584c356197140]",
+                                        "type": "true_false",
+                                        "value": null,
+                                        "menu_order": 5,
+                                        "instructions": "",
+                                        "required": 0,
+                                        "id": "",
+                                        "class": "",
+                                        "conditional_logic": 0,
+                                        "parent": "group_584c18d4beacd",
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "_name": "section__post_pager",
+                                        "_prepare": 0,
+                                        "_valid": 1,
+                                        "_clone": "field_584c356197140",
+                                        "parent_layout": "5845761a2020a",
+                                        "__key": "field_584c1a0b23045",
+                                        "__name": "section__post_pager",
+                                        "__label": "Pagination"
+                                    },
+                                    {
+                                        "clone": [
+                                            "group_584c1c1b39cc5"
+                                        ],
+                                        "prefix_label": 0,
+                                        "prefix_name": 0,
+                                        "display": "group",
+                                        "layout": "row",
+                                        "ID": 0,
+                                        "key": "field_584c356197140_field_584c1ece6bedf",
+                                        "label": "Background",
+                                        "name": "section__background",
+                                        "prefix": "acf[field_584c356197140]",
+                                        "type": "clone",
+                                        "value": null,
+                                        "menu_order": 6,
+                                        "instructions": "",
+                                        "required": 0,
+                                        "id": "",
+                                        "class": "",
+                                        "conditional_logic": 0,
+                                        "parent": "group_584c18d4beacd",
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "_name": "section__background",
+                                        "_prepare": 0,
+                                        "_valid": 1,
+                                        "sub_fields": [
+                                            {
+                                                "multiple": 0,
+                                                "allow_null": 0,
+                                                "choices": {
+                                                    "none": "None",
+                                                    "color": "Color",
+                                                    "image": "Image"
+                                                },
+                                                "default_value": [
+                                                    "none"
+                                                ],
+                                                "ui": 1,
+                                                "ajax": 0,
+                                                "placeholder": "",
+                                                "return_format": "value",
+                                                "ID": 0,
+                                                "key": "field_584c356197140_field_584c1ece6bedf_field_584c1c66ce26b",
+                                                "label": "Background",
+                                                "name": "background_type",
+                                                "prefix": "acf[field_584c1ece6bedf][field_584c356197140]",
+                                                "type": "select",
+                                                "value": null,
+                                                "menu_order": 0,
+                                                "instructions": "",
+                                                "required": 0,
+                                                "id": "",
+                                                "class": "",
+                                                "conditional_logic": 0,
+                                                "parent": "group_584c1c1b39cc5",
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "_name": "background_type",
+                                                "_prepare": 0,
+                                                "_valid": 1,
+                                                "_clone": "field_584c356197140",
+                                                "__key": "field_584c1c66ce26b",
+                                                "__name": "background_type",
+                                                "__label": "Background",
+                                                "parent_layout": "5845761a2020a"
+                                            },
+                                            {
+                                                "multiple": 0,
+                                                "allow_null": 0,
+                                                "choices": {
+                                                    "primary": "Primary color",
+                                                    "secondary": "Secondary color",
+                                                    "white": "White",
+                                                    "black": "Black"
+                                                },
+                                                "default_value": [],
+                                                "ui": 1,
+                                                "ajax": 0,
+                                                "placeholder": "",
+                                                "return_format": "value",
+                                                "ID": 0,
+                                                "key": "field_584c356197140_field_584c1ece6bedf_field_584c1c2e52532",
+                                                "label": "Color",
+                                                "name": "background_color",
+                                                "prefix": "acf[field_584c1ece6bedf][field_584c356197140]",
+                                                "type": "select",
+                                                "value": null,
+                                                "menu_order": 1,
+                                                "instructions": "",
+                                                "required": 0,
+                                                "id": "",
+                                                "class": "",
+                                                "conditional_logic": [
+                                                    [
+                                                        {
+                                                            "field": "field_584c1c66ce26b",
+                                                            "operator": "==",
+                                                            "value": "color"
+                                                        }
+                                                    ]
+                                                ],
+                                                "parent": "group_584c1c1b39cc5",
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "_name": "background_color",
+                                                "_prepare": 0,
+                                                "_valid": 1,
+                                                "_clone": "field_584c356197140",
+                                                "__key": "field_584c1c2e52532",
+                                                "__name": "background_color",
+                                                "__label": "Color",
+                                                "parent_layout": "5845761a2020a"
+                                            },
+                                            {
+                                                "force_crop": "no",
+                                                "crop_type": "min",
+                                                "preview_size": "medium",
+                                                "save_format": "url",
+                                                "save_in_media_library": "no",
+                                                "target_size": "thumbnail",
+                                                "library": "all",
+                                                "retina_mode": "no",
+                                                "ID": 0,
+                                                "key": "field_584c356197140_field_584c1ece6bedf_field_584c1c8fce26c",
+                                                "label": "Image",
+                                                "name": "background_image",
+                                                "prefix": "acf[field_584c1ece6bedf][field_584c356197140]",
+                                                "type": "image_crop",
+                                                "value": null,
+                                                "menu_order": 2,
+                                                "instructions": "",
+                                                "required": 0,
+                                                "id": "",
+                                                "class": "",
+                                                "conditional_logic": [
+                                                    [
+                                                        {
+                                                            "field": "field_584c1c66ce26b",
+                                                            "operator": "==",
+                                                            "value": "image"
+                                                        }
+                                                    ]
+                                                ],
+                                                "parent": "group_584c1c1b39cc5",
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "_name": "background_image",
+                                                "_prepare": 0,
+                                                "_valid": 1,
+                                                "width": "",
+                                                "height": "",
+                                                "_clone": "field_584c356197140",
+                                                "__key": "field_584c1c8fce26c",
+                                                "__name": "background_image",
+                                                "__label": "Image",
+                                                "parent_layout": "5845761a2020a"
+                                            },
+                                            {
+                                                "multiple": 0,
+                                                "allow_null": 0,
+                                                "choices": {
+                                                    "none": "None",
+                                                    "primary": "Primary color",
+                                                    "secondary": "Secondary color",
+                                                    "white": "Light",
+                                                    "black": "Dark"
+                                                },
+                                                "default_value": [
+                                                    "dark"
+                                                ],
+                                                "ui": 1,
+                                                "ajax": 0,
+                                                "placeholder": "",
+                                                "return_format": "value",
+                                                "ID": 0,
+                                                "key": "field_584c356197140_field_584c1ece6bedf_field_584c1cc2ce26d",
+                                                "label": "Overlay",
+                                                "name": "background_overlay",
+                                                "prefix": "acf[field_584c1ece6bedf][field_584c356197140]",
+                                                "type": "select",
+                                                "value": null,
+                                                "menu_order": 3,
+                                                "instructions": "",
+                                                "required": 0,
+                                                "id": "",
+                                                "class": "",
+                                                "conditional_logic": [
+                                                    [
+                                                        {
+                                                            "field": "field_584c1c66ce26b",
+                                                            "operator": "==",
+                                                            "value": "image"
+                                                        }
+                                                    ]
+                                                ],
+                                                "parent": "group_584c1c1b39cc5",
+                                                "wrapper": {
+                                                    "width": "",
+                                                    "class": "",
+                                                    "id": ""
+                                                },
+                                                "_name": "background_overlay",
+                                                "_prepare": 0,
+                                                "_valid": 1,
+                                                "_clone": "field_584c356197140",
+                                                "__key": "field_584c1cc2ce26d",
+                                                "__name": "background_overlay",
+                                                "__label": "Overlay",
+                                                "parent_layout": "5845761a2020a"
+                                            }
+                                        ],
+                                        "_clone": "field_584c356197140",
+                                        "parent_layout": "5845761a2020a",
+                                        "__key": "field_584c1ece6bedf",
+                                        "__name": "section__background",
+                                        "__label": "Background"
+                                    }
+                                ]
+                            },
+                            {
+                                "clone": [
+                                    "group_584c1f53eab6a"
+                                ],
+                                "prefix_label": 0,
+                                "prefix_name": 0,
+                                "display": "group",
+                                "layout": "block",
+                                "key": "field_584c4bc2dfd15",
+                                "label": "Grid placement",
+                                "name": "section__grid",
+                                "type": "clone",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "sub_fields": [
+                                    {
+                                        "default_value": 0,
+                                        "message": "Set grid placement properties",
+                                        "ui": 0,
+                                        "ui_on_text": "",
+                                        "ui_off_text": "",
+                                        "ID": 0,
+                                        "key": "field_584c4bc2dfd15_field_584c1f8c2a6d9",
+                                        "label": "Grid placement",
+                                        "name": "grid_active",
+                                        "prefix": "acf[field_584c4bc2dfd15]",
+                                        "type": "true_false",
+                                        "value": null,
+                                        "menu_order": 0,
+                                        "instructions": "",
+                                        "required": 0,
+                                        "id": "",
+                                        "class": "",
+                                        "conditional_logic": 0,
+                                        "parent": "group_584c1f53eab6a",
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "_name": "grid_active",
+                                        "_prepare": 0,
+                                        "_valid": 1,
+                                        "_clone": "field_584c4bc2dfd15",
+                                        "parent_layout": "5845761a2020a",
+                                        "__key": "field_584c1f8c2a6d9",
+                                        "__name": "grid_active",
+                                        "__label": "Grid placement"
+                                    },
+                                    {
+                                        "ID": 0,
+                                        "key": "field_584c4bc2dfd15_field_584c4933b600b",
+                                        "label": "Settings",
+                                        "name": "grid_column",
+                                        "prefix": "acf[field_584c4bc2dfd15]",
+                                        "type": "foundation_column",
+                                        "value": null,
+                                        "menu_order": 1,
+                                        "instructions": "",
+                                        "required": 0,
+                                        "id": "",
+                                        "class": "",
+                                        "conditional_logic": [
+                                            [
+                                                {
+                                                    "field": "field_584c1f8c2a6d9",
+                                                    "operator": "==",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        ],
+                                        "parent": "group_584c1f53eab6a",
+                                        "wrapper": {
+                                            "width": "",
+                                            "class": "",
+                                            "id": ""
+                                        },
+                                        "_name": "grid_column",
+                                        "_prepare": 0,
+                                        "_valid": 1,
+                                        "_clone": "field_584c4bc2dfd15",
+                                        "parent_layout": "5845761a2020a",
+                                        "__key": "field_584c4933b600b",
+                                        "__name": "grid_column",
+                                        "__label": "Settings"
+                                    }
+                                ]
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    }
+                ],
+                "min": "",
+                "max": "",
+                "button_label": "Add Section",
+                "key": "field_5845730602489",
+                "label": "Section",
+                "name": "section",
+                "type": "flexible_content",
+                "instructions": "Create block sections displayed below the content of the page. There are various styles available.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": -99,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "A flexible content field of all section types. Used to create pages."
+    },
+    {
+        "key": "group_584c35da444dd",
+        "title": "Section: Blockquote",
+        "fields": [
+            {
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "default_value": "",
+                "delay": 1,
+                "key": "field_584c35da52df5",
+                "label": "Content",
+                "name": "section__content",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "clone": [
+                    "group_584c1c1b39cc5"
+                ],
+                "prefix_label": 0,
+                "prefix_name": 0,
+                "display": "group",
+                "layout": "row",
+                "key": "field_584c35da52eb1",
+                "label": "Background",
+                "name": "section__background",
+                "type": "clone",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "sub_fields": [
+                    {
+                        "multiple": 0,
+                        "allow_null": 0,
+                        "choices": {
+                            "none": "None",
+                            "color": "Color",
+                            "image": "Image"
+                        },
+                        "default_value": [
+                            "none"
+                        ],
+                        "ui": 1,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "return_format": "value",
+                        "ID": 0,
+                        "key": "field_584c35da52eb1_field_584c1c66ce26b",
+                        "label": "Background",
+                        "name": "background_type",
+                        "prefix": "acf[field_584c35da52eb1]",
+                        "type": "select",
+                        "value": null,
+                        "menu_order": 0,
+                        "instructions": "",
+                        "required": 0,
+                        "id": "",
+                        "class": "",
+                        "conditional_logic": 0,
+                        "parent": "group_584c1c1b39cc5",
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "_name": "background_type",
+                        "_prepare": 0,
+                        "_valid": 1,
+                        "_clone": "field_584c35da52eb1",
+                        "__key": "field_584c1c66ce26b",
+                        "__name": "background_type",
+                        "__label": "Background"
+                    },
+                    {
+                        "multiple": 0,
+                        "allow_null": 0,
+                        "choices": {
+                            "primary": "Primary color",
+                            "secondary": "Secondary color",
+                            "white": "White",
+                            "black": "Black"
+                        },
+                        "default_value": [],
+                        "ui": 1,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "return_format": "value",
+                        "ID": 0,
+                        "key": "field_584c35da52eb1_field_584c1c2e52532",
+                        "label": "Color",
+                        "name": "background_color",
+                        "prefix": "acf[field_584c35da52eb1]",
+                        "type": "select",
+                        "value": null,
+                        "menu_order": 1,
+                        "instructions": "",
+                        "required": 0,
+                        "id": "",
+                        "class": "",
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_584c1c66ce26b",
+                                    "operator": "==",
+                                    "value": "color"
+                                }
+                            ]
+                        ],
+                        "parent": "group_584c1c1b39cc5",
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "_name": "background_color",
+                        "_prepare": 0,
+                        "_valid": 1,
+                        "_clone": "field_584c35da52eb1",
+                        "__key": "field_584c1c2e52532",
+                        "__name": "background_color",
+                        "__label": "Color"
+                    },
+                    {
+                        "force_crop": "no",
+                        "crop_type": "min",
+                        "preview_size": "medium",
+                        "save_format": "url",
+                        "save_in_media_library": "no",
+                        "target_size": "thumbnail",
+                        "library": "all",
+                        "retina_mode": "no",
+                        "ID": 0,
+                        "key": "field_584c35da52eb1_field_584c1c8fce26c",
+                        "label": "Image",
+                        "name": "background_image",
+                        "prefix": "acf[field_584c35da52eb1]",
+                        "type": "image_crop",
+                        "value": null,
+                        "menu_order": 2,
+                        "instructions": "",
+                        "required": 0,
+                        "id": "",
+                        "class": "",
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_584c1c66ce26b",
+                                    "operator": "==",
+                                    "value": "image"
+                                }
+                            ]
+                        ],
+                        "parent": "group_584c1c1b39cc5",
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "_name": "background_image",
+                        "_prepare": 0,
+                        "_valid": 1,
+                        "width": "",
+                        "height": "",
+                        "_clone": "field_584c35da52eb1",
+                        "__key": "field_584c1c8fce26c",
+                        "__name": "background_image",
+                        "__label": "Image"
+                    },
+                    {
+                        "multiple": 0,
+                        "allow_null": 0,
+                        "choices": {
+                            "none": "None",
+                            "primary": "Primary color",
+                            "secondary": "Secondary color",
+                            "white": "Light",
+                            "black": "Dark"
+                        },
+                        "default_value": [
+                            "dark"
+                        ],
+                        "ui": 1,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "return_format": "value",
+                        "ID": 0,
+                        "key": "field_584c35da52eb1_field_584c1cc2ce26d",
+                        "label": "Overlay",
+                        "name": "background_overlay",
+                        "prefix": "acf[field_584c35da52eb1]",
+                        "type": "select",
+                        "value": null,
+                        "menu_order": 3,
+                        "instructions": "",
+                        "required": 0,
+                        "id": "",
+                        "class": "",
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_584c1c66ce26b",
+                                    "operator": "==",
+                                    "value": "image"
+                                }
+                            ]
+                        ],
+                        "parent": "group_584c1c1b39cc5",
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "_name": "background_overlay",
+                        "_prepare": 0,
+                        "_valid": 1,
+                        "_clone": "field_584c35da52eb1",
+                        "__key": "field_584c1cc2ce26d",
+                        "__name": "background_overlay",
+                        "__label": "Overlay"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "widget",
+                    "operator": "==",
+                    "value": "acf_widget_blockquote_widget"
+                }
+            ]
+        ],
+        "menu_order": 50,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "A blockquote section type. Used in section repeaters and the corresponding widget."
+    },
+    {
+        "key": "group_584c18d4beacd",
+        "title": "Section: Post listing",
+        "fields": [
+            {
+                "clone": [
+                    "group_584c1a85a57a8"
+                ],
+                "prefix_label": 0,
+                "prefix_name": 0,
+                "display": "group",
+                "layout": "row",
+                "key": "field_584c1d9ab7f3f",
+                "label": "Title",
+                "name": "section__title",
+                "type": "clone",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "sub_fields": [
+                    {
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "ID": 0,
+                        "key": "field_584c1d9ab7f3f_field_584c1a8ea96ef",
+                        "label": "Title",
+                        "name": "title_text",
+                        "prefix": "acf[field_584c1d9ab7f3f]",
+                        "type": "text",
+                        "value": null,
+                        "menu_order": 0,
+                        "instructions": "",
+                        "required": 0,
+                        "id": "",
+                        "class": "",
+                        "conditional_logic": 0,
+                        "parent": "group_584c1a85a57a8",
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "_name": "title_text",
+                        "_prepare": 0,
+                        "_valid": 1,
+                        "_clone": "field_584c1d9ab7f3f",
+                        "__key": "field_584c1a8ea96ef",
+                        "__name": "title_text",
+                        "__label": "Title"
+                    },
+                    {
+                        "default_value": 0,
+                        "message": "",
+                        "ui": 0,
+                        "ui_on_text": "",
+                        "ui_off_text": "",
+                        "ID": 0,
+                        "key": "field_584c1d9ab7f3f_field_584c1a9da96f0",
+                        "label": "Link",
+                        "name": "title_link",
+                        "prefix": "acf[field_584c1d9ab7f3f]",
+                        "type": "true_false",
+                        "value": null,
+                        "menu_order": 1,
+                        "instructions": "",
+                        "required": 0,
+                        "id": "",
+                        "class": "",
+                        "conditional_logic": 0,
+                        "parent": "group_584c1a85a57a8",
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "_name": "title_link",
+                        "_prepare": 0,
+                        "_valid": 1,
+                        "_clone": "field_584c1d9ab7f3f",
+                        "__key": "field_584c1a9da96f0",
+                        "__name": "title_link",
+                        "__label": "Link"
+                    },
+                    {
+                        "post_type": [
+                            "post",
+                            "page"
+                        ],
+                        "taxonomy": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "allow_archives": 1,
+                        "ID": 0,
+                        "key": "field_584c1d9ab7f3f_field_584c1ab2a96f1",
+                        "label": "Page",
+                        "name": "title_link_url",
+                        "prefix": "acf[field_584c1d9ab7f3f]",
+                        "type": "page_link",
+                        "value": null,
+                        "menu_order": 2,
+                        "instructions": "",
+                        "required": 0,
+                        "id": "",
+                        "class": "",
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_584c1a9da96f0",
+                                    "operator": "==",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "parent": "group_584c1a85a57a8",
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "_name": "title_link_url",
+                        "_prepare": 0,
+                        "_valid": 1,
+                        "_clone": "field_584c1d9ab7f3f",
+                        "__key": "field_584c1ab2a96f1",
+                        "__name": "title_link_url",
+                        "__label": "Page"
+                    }
+                ]
+            },
+            {
+                "choices": [
+                    "page",
+                    "post"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 1,
+                "ajax": 0,
+                "key": "field_584c197423042",
+                "label": "Post type",
+                "name": "section__post_type",
+                "type": "post_type_chooser",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "slider_min_value": -1,
+                "slider_max_value": 15,
+                "increment_value": 1,
+                "slider_units": "&nbsp;post(s)",
+                "default_value": -1,
+                "key": "field_584c19a923043",
+                "label": "Post limit",
+                "name": "section__post_limit",
+                "type": "number_slider",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "multiple": 0,
+                "allow_null": 0,
+                "choices": {
+                    "desc": "Newest first",
+                    "asc": "Oldest first"
+                },
+                "default_value": [
+                    "desc"
+                ],
+                "ui": 1,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value",
+                "key": "field_584c19e523044",
+                "label": "Post order",
+                "name": "section__post_order",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "key": "field_584c2aa20eab3",
+                "label": "Post grid",
+                "name": "section__block_grid",
+                "type": "foundation_row",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "default_value": 0,
+                "message": "",
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": "",
+                "key": "field_584c1a0b23045",
+                "label": "Pagination",
+                "name": "section__post_pager",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "clone": [
+                    "group_584c1c1b39cc5"
+                ],
+                "prefix_label": 0,
+                "prefix_name": 0,
+                "display": "group",
+                "layout": "row",
+                "key": "field_584c1ece6bedf",
+                "label": "Background",
+                "name": "section__background",
+                "type": "clone",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "sub_fields": [
+                    {
+                        "multiple": 0,
+                        "allow_null": 0,
+                        "choices": {
+                            "none": "None",
+                            "color": "Color",
+                            "image": "Image"
+                        },
+                        "default_value": [
+                            "none"
+                        ],
+                        "ui": 1,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "return_format": "value",
+                        "ID": 0,
+                        "key": "field_584c1ece6bedf_field_584c1c66ce26b",
+                        "label": "Background",
+                        "name": "background_type",
+                        "prefix": "acf[field_584c1ece6bedf]",
+                        "type": "select",
+                        "value": null,
+                        "menu_order": 0,
+                        "instructions": "",
+                        "required": 0,
+                        "id": "",
+                        "class": "",
+                        "conditional_logic": 0,
+                        "parent": "group_584c1c1b39cc5",
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "_name": "background_type",
+                        "_prepare": 0,
+                        "_valid": 1,
+                        "_clone": "field_584c1ece6bedf",
+                        "__key": "field_584c1c66ce26b",
+                        "__name": "background_type",
+                        "__label": "Background"
+                    },
+                    {
+                        "multiple": 0,
+                        "allow_null": 0,
+                        "choices": {
+                            "primary": "Primary color",
+                            "secondary": "Secondary color",
+                            "white": "White",
+                            "black": "Black"
+                        },
+                        "default_value": [],
+                        "ui": 1,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "return_format": "value",
+                        "ID": 0,
+                        "key": "field_584c1ece6bedf_field_584c1c2e52532",
+                        "label": "Color",
+                        "name": "background_color",
+                        "prefix": "acf[field_584c1ece6bedf]",
+                        "type": "select",
+                        "value": null,
+                        "menu_order": 1,
+                        "instructions": "",
+                        "required": 0,
+                        "id": "",
+                        "class": "",
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_584c1c66ce26b",
+                                    "operator": "==",
+                                    "value": "color"
+                                }
+                            ]
+                        ],
+                        "parent": "group_584c1c1b39cc5",
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "_name": "background_color",
+                        "_prepare": 0,
+                        "_valid": 1,
+                        "_clone": "field_584c1ece6bedf",
+                        "__key": "field_584c1c2e52532",
+                        "__name": "background_color",
+                        "__label": "Color"
+                    },
+                    {
+                        "force_crop": "no",
+                        "crop_type": "min",
+                        "preview_size": "medium",
+                        "save_format": "url",
+                        "save_in_media_library": "no",
+                        "target_size": "thumbnail",
+                        "library": "all",
+                        "retina_mode": "no",
+                        "ID": 0,
+                        "key": "field_584c1ece6bedf_field_584c1c8fce26c",
+                        "label": "Image",
+                        "name": "background_image",
+                        "prefix": "acf[field_584c1ece6bedf]",
+                        "type": "image_crop",
+                        "value": null,
+                        "menu_order": 2,
+                        "instructions": "",
+                        "required": 0,
+                        "id": "",
+                        "class": "",
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_584c1c66ce26b",
+                                    "operator": "==",
+                                    "value": "image"
+                                }
+                            ]
+                        ],
+                        "parent": "group_584c1c1b39cc5",
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "_name": "background_image",
+                        "_prepare": 0,
+                        "_valid": 1,
+                        "width": "",
+                        "height": "",
+                        "_clone": "field_584c1ece6bedf",
+                        "__key": "field_584c1c8fce26c",
+                        "__name": "background_image",
+                        "__label": "Image"
+                    },
+                    {
+                        "multiple": 0,
+                        "allow_null": 0,
+                        "choices": {
+                            "none": "None",
+                            "primary": "Primary color",
+                            "secondary": "Secondary color",
+                            "white": "Light",
+                            "black": "Dark"
+                        },
+                        "default_value": [
+                            "dark"
+                        ],
+                        "ui": 1,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "return_format": "value",
+                        "ID": 0,
+                        "key": "field_584c1ece6bedf_field_584c1cc2ce26d",
+                        "label": "Overlay",
+                        "name": "background_overlay",
+                        "prefix": "acf[field_584c1ece6bedf]",
+                        "type": "select",
+                        "value": null,
+                        "menu_order": 3,
+                        "instructions": "",
+                        "required": 0,
+                        "id": "",
+                        "class": "",
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_584c1c66ce26b",
+                                    "operator": "==",
+                                    "value": "image"
+                                }
+                            ]
+                        ],
+                        "parent": "group_584c1c1b39cc5",
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "_name": "background_overlay",
+                        "_prepare": 0,
+                        "_valid": 1,
+                        "_clone": "field_584c1ece6bedf",
+                        "__key": "field_584c1cc2ce26d",
+                        "__name": "background_overlay",
+                        "__label": "Overlay"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "widget",
+                    "operator": "==",
+                    "value": "acf_widget_post_listing_widget"
+                }
+            ]
+        ],
+        "menu_order": 50,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "A post listing section type. Used in section repeaters and the corresponding widget."
+    },
+    {
+        "key": "group_584c3280ba455",
+        "title": "Section: Text",
+        "fields": [
+            {
+                "clone": [
+                    "group_584c1a85a57a8"
+                ],
+                "prefix_label": 0,
+                "prefix_name": 0,
+                "display": "group",
+                "layout": "row",
+                "key": "field_584c328ec17c2",
+                "label": "Title",
+                "name": "section__title",
+                "type": "clone",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "sub_fields": [
+                    {
+                        "default_value": "",
+                        "maxlength": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "ID": 0,
+                        "key": "field_584c328ec17c2_field_584c1a8ea96ef",
+                        "label": "Title",
+                        "name": "title_text",
+                        "prefix": "acf[field_584c328ec17c2]",
+                        "type": "text",
+                        "value": null,
+                        "menu_order": 0,
+                        "instructions": "",
+                        "required": 0,
+                        "id": "",
+                        "class": "",
+                        "conditional_logic": 0,
+                        "parent": "group_584c1a85a57a8",
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "_name": "title_text",
+                        "_prepare": 0,
+                        "_valid": 1,
+                        "_clone": "field_584c328ec17c2",
+                        "__key": "field_584c1a8ea96ef",
+                        "__name": "title_text",
+                        "__label": "Title"
+                    },
+                    {
+                        "default_value": 0,
+                        "message": "",
+                        "ui": 0,
+                        "ui_on_text": "",
+                        "ui_off_text": "",
+                        "ID": 0,
+                        "key": "field_584c328ec17c2_field_584c1a9da96f0",
+                        "label": "Link",
+                        "name": "title_link",
+                        "prefix": "acf[field_584c328ec17c2]",
+                        "type": "true_false",
+                        "value": null,
+                        "menu_order": 1,
+                        "instructions": "",
+                        "required": 0,
+                        "id": "",
+                        "class": "",
+                        "conditional_logic": 0,
+                        "parent": "group_584c1a85a57a8",
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "_name": "title_link",
+                        "_prepare": 0,
+                        "_valid": 1,
+                        "_clone": "field_584c328ec17c2",
+                        "__key": "field_584c1a9da96f0",
+                        "__name": "title_link",
+                        "__label": "Link"
+                    },
+                    {
+                        "post_type": [
+                            "post",
+                            "page"
+                        ],
+                        "taxonomy": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "allow_archives": 1,
+                        "ID": 0,
+                        "key": "field_584c328ec17c2_field_584c1ab2a96f1",
+                        "label": "Page",
+                        "name": "title_link_url",
+                        "prefix": "acf[field_584c328ec17c2]",
+                        "type": "page_link",
+                        "value": null,
+                        "menu_order": 2,
+                        "instructions": "",
+                        "required": 0,
+                        "id": "",
+                        "class": "",
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_584c1a9da96f0",
+                                    "operator": "==",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "parent": "group_584c1a85a57a8",
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "_name": "title_link_url",
+                        "_prepare": 0,
+                        "_valid": 1,
+                        "_clone": "field_584c328ec17c2",
+                        "__key": "field_584c1ab2a96f1",
+                        "__name": "title_link_url",
+                        "__label": "Page"
+                    }
+                ]
+            },
+            {
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "default_value": "",
+                "delay": 1,
+                "key": "field_584c32b0c17c3",
+                "label": "Content",
+                "name": "section__content",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "clone": [
+                    "group_584c1c1b39cc5"
+                ],
+                "prefix_label": 0,
+                "prefix_name": 0,
+                "display": "group",
+                "layout": "row",
+                "key": "field_584c32d6164c6",
+                "label": "Background",
+                "name": "section__background",
+                "type": "clone",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "sub_fields": [
+                    {
+                        "multiple": 0,
+                        "allow_null": 0,
+                        "choices": {
+                            "none": "None",
+                            "color": "Color",
+                            "image": "Image"
+                        },
+                        "default_value": [
+                            "none"
+                        ],
+                        "ui": 1,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "return_format": "value",
+                        "ID": 0,
+                        "key": "field_584c32d6164c6_field_584c1c66ce26b",
+                        "label": "Background",
+                        "name": "background_type",
+                        "prefix": "acf[field_584c32d6164c6]",
+                        "type": "select",
+                        "value": null,
+                        "menu_order": 0,
+                        "instructions": "",
+                        "required": 0,
+                        "id": "",
+                        "class": "",
+                        "conditional_logic": 0,
+                        "parent": "group_584c1c1b39cc5",
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "_name": "background_type",
+                        "_prepare": 0,
+                        "_valid": 1,
+                        "_clone": "field_584c32d6164c6",
+                        "__key": "field_584c1c66ce26b",
+                        "__name": "background_type",
+                        "__label": "Background"
+                    },
+                    {
+                        "multiple": 0,
+                        "allow_null": 0,
+                        "choices": {
+                            "primary": "Primary color",
+                            "secondary": "Secondary color",
+                            "white": "White",
+                            "black": "Black"
+                        },
+                        "default_value": [],
+                        "ui": 1,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "return_format": "value",
+                        "ID": 0,
+                        "key": "field_584c32d6164c6_field_584c1c2e52532",
+                        "label": "Color",
+                        "name": "background_color",
+                        "prefix": "acf[field_584c32d6164c6]",
+                        "type": "select",
+                        "value": null,
+                        "menu_order": 1,
+                        "instructions": "",
+                        "required": 0,
+                        "id": "",
+                        "class": "",
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_584c1c66ce26b",
+                                    "operator": "==",
+                                    "value": "color"
+                                }
+                            ]
+                        ],
+                        "parent": "group_584c1c1b39cc5",
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "_name": "background_color",
+                        "_prepare": 0,
+                        "_valid": 1,
+                        "_clone": "field_584c32d6164c6",
+                        "__key": "field_584c1c2e52532",
+                        "__name": "background_color",
+                        "__label": "Color"
+                    },
+                    {
+                        "force_crop": "no",
+                        "crop_type": "min",
+                        "preview_size": "medium",
+                        "save_format": "url",
+                        "save_in_media_library": "no",
+                        "target_size": "thumbnail",
+                        "library": "all",
+                        "retina_mode": "no",
+                        "ID": 0,
+                        "key": "field_584c32d6164c6_field_584c1c8fce26c",
+                        "label": "Image",
+                        "name": "background_image",
+                        "prefix": "acf[field_584c32d6164c6]",
+                        "type": "image_crop",
+                        "value": null,
+                        "menu_order": 2,
+                        "instructions": "",
+                        "required": 0,
+                        "id": "",
+                        "class": "",
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_584c1c66ce26b",
+                                    "operator": "==",
+                                    "value": "image"
+                                }
+                            ]
+                        ],
+                        "parent": "group_584c1c1b39cc5",
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "_name": "background_image",
+                        "_prepare": 0,
+                        "_valid": 1,
+                        "width": "",
+                        "height": "",
+                        "_clone": "field_584c32d6164c6",
+                        "__key": "field_584c1c8fce26c",
+                        "__name": "background_image",
+                        "__label": "Image"
+                    },
+                    {
+                        "multiple": 0,
+                        "allow_null": 0,
+                        "choices": {
+                            "none": "None",
+                            "primary": "Primary color",
+                            "secondary": "Secondary color",
+                            "white": "Light",
+                            "black": "Dark"
+                        },
+                        "default_value": [
+                            "dark"
+                        ],
+                        "ui": 1,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "return_format": "value",
+                        "ID": 0,
+                        "key": "field_584c32d6164c6_field_584c1cc2ce26d",
+                        "label": "Overlay",
+                        "name": "background_overlay",
+                        "prefix": "acf[field_584c32d6164c6]",
+                        "type": "select",
+                        "value": null,
+                        "menu_order": 3,
+                        "instructions": "",
+                        "required": 0,
+                        "id": "",
+                        "class": "",
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_584c1c66ce26b",
+                                    "operator": "==",
+                                    "value": "image"
+                                }
+                            ]
+                        ],
+                        "parent": "group_584c1c1b39cc5",
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "_name": "background_overlay",
+                        "_prepare": 0,
+                        "_valid": 1,
+                        "_clone": "field_584c32d6164c6",
+                        "__key": "field_584c1cc2ce26d",
+                        "__name": "background_overlay",
+                        "__label": "Overlay"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "widget",
+                    "operator": "==",
+                    "value": "acf_widget_text_widget"
+                }
+            ]
+        ],
+        "menu_order": 50,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "A text section type. Used in section repeaters and the corresponding widget."
+    },
+    {
+        "key": "group_584c1c1b39cc5",
+        "title": "Section Field: Background",
+        "fields": [
+            {
+                "multiple": 0,
+                "allow_null": 0,
+                "choices": {
+                    "none": "None",
+                    "color": "Color",
+                    "image": "Image"
+                },
+                "default_value": [
+                    "none"
+                ],
+                "ui": 1,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value",
+                "key": "field_584c1c66ce26b",
+                "label": "Background",
+                "name": "background_type",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "multiple": 0,
+                "allow_null": 0,
+                "choices": {
+                    "primary": "Primary color",
+                    "secondary": "Secondary color",
+                    "white": "White",
+                    "black": "Black"
+                },
+                "default_value": [],
+                "ui": 1,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value",
+                "key": "field_584c1c2e52532",
+                "label": "Color",
+                "name": "background_color",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_584c1c66ce26b",
+                            "operator": "==",
+                            "value": "color"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "force_crop": "no",
+                "crop_type": "min",
+                "preview_size": "medium",
+                "save_format": "url",
+                "save_in_media_library": "no",
+                "target_size": "thumbnail",
+                "library": "all",
+                "retina_mode": "no",
+                "key": "field_584c1c8fce26c",
+                "label": "Image",
+                "name": "background_image",
+                "type": "image_crop",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_584c1c66ce26b",
+                            "operator": "==",
+                            "value": "image"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "width": "",
+                "height": ""
+            },
+            {
+                "multiple": 0,
+                "allow_null": 0,
+                "choices": {
+                    "none": "None",
+                    "primary": "Primary color",
+                    "secondary": "Secondary color",
+                    "white": "Light",
+                    "black": "Dark"
+                },
+                "default_value": [
+                    "dark"
+                ],
+                "ui": 1,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value",
+                "key": "field_584c1cc2ce26d",
+                "label": "Overlay",
+                "name": "background_overlay",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_584c1c66ce26b",
+                            "operator": "==",
+                            "value": "image"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                },
+                {
+                    "param": "post_type",
+                    "operator": "!=",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 99,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "Background settings attached to section field groups."
+    },
+    {
+        "key": "group_584c1f53eab6a",
+        "title": "Section Field: Column",
+        "fields": [
+            {
+                "default_value": 0,
+                "message": "Set grid placement properties",
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": "",
+                "key": "field_584c1f8c2a6d9",
+                "label": "Grid placement",
+                "name": "grid_active",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "key": "field_584c4933b600b",
+                "label": "Settings",
+                "name": "grid_column",
+                "type": "foundation_column",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_584c1f8c2a6d9",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                },
+                {
+                    "param": "post_type",
+                    "operator": "!=",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 99,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "Foundation column settings attached to eg. section flexible content fieldgroups."
+    },
+    {
+        "key": "group_584c33545eb9a",
+        "title": "Section Field: Read more",
+        "fields": [
+            {
+                "key": "field_584c3360b286b",
+                "label": "Read more button",
+                "name": "readmore_button",
+                "type": "smart_button",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "page",
+                    "post"
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                },
+                {
+                    "param": "post_type",
+                    "operator": "!=",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 99,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "A read more button attached to section fieldgroups."
+    },
+    {
+        "key": "group_584c1a85a57a8",
+        "title": "Section Field: Title",
+        "fields": [
+            {
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "key": "field_584c1a8ea96ef",
+                "label": "Title",
+                "name": "title_text",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "default_value": 0,
+                "message": "",
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": "",
+                "key": "field_584c1a9da96f0",
+                "label": "Link",
+                "name": "title_link",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "post_type": [
+                    "post",
+                    "page"
+                ],
+                "taxonomy": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "allow_archives": 1,
+                "key": "field_584c1ab2a96f1",
+                "label": "Page",
+                "name": "title_link_url",
+                "type": "page_link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_584c1a9da96f0",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "!=",
+                    "value": "front_page"
+                },
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 99,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "Title settings attached to section field groups."
+    }
+]
