@@ -71,13 +71,25 @@ class SectionComponent implements ComponentInterface
         ],
     ];
 
+    public function __construct($options = [])
+    {
+        $this->options = (object) array_merge([
+            'fieldgroups' => true,
+            'widgets' => true,
+        ], $options);
+    }
+
     public function init()
     {
-        add_filter('acf/init', [$this, 'addAcfFieldgroup']);
-        add_filter('acfw_include_widgets', [$this, 'registerPostListingWidget']);
-        add_filter('acfw_include_widgets', [$this, 'registerBlockquoteWidget']);
-        add_filter('acfw_include_widgets', [$this, 'registerTextWidget']);
-        add_filter('acfw_include_widgets', [$this, 'registerTextImageWidget']);
+        if ($this->options->fieldgroups) {
+            add_filter('acf/init', [$this, 'addAcfFieldgroup']);
+        }
+        if ($this->options->widgets) {
+            add_filter('acfw_include_widgets', [$this, 'registerPostListingWidget']);
+            add_filter('acfw_include_widgets', [$this, 'registerBlockquoteWidget']);
+            add_filter('acfw_include_widgets', [$this, 'registerTextWidget']);
+            add_filter('acfw_include_widgets', [$this, 'registerTextImageWidget']);
+        }
     }
 
     public function addAcfFieldgroup()

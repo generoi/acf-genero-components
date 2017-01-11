@@ -9,10 +9,23 @@ class HeroComponent implements ComponentInterface
 {
     public static $groupKey = 'group_5841c75e2a9b5';
 
+    public function __construct($options = [])
+    {
+        $this->options = (object) array_merge([
+            'fieldgroups' => true,
+            'wpseo' => true,
+        ], $options);
+    }
+
+
     public function init()
     {
-        add_filter('acf/init', [$this, 'addAcfFieldgroup']);
-        add_filter('wpseo_opengraph_image', [$this, 'setOgImage']);
+        if ($this->options->fieldgroups) {
+            add_filter('acf/init', [$this, 'addAcfFieldgroup']);
+        }
+        if ($this->options->wpseo) {
+            add_filter('wpseo_opengraph_image', [$this, 'setOgImage']);
+        }
     }
 
     public function addAcfFieldgroup()
