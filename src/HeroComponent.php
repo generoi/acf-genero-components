@@ -9,22 +9,12 @@ class HeroComponent implements ComponentInterface
 {
     public static $groupKey = 'group_5841c75e2a9b5';
 
-    public function __construct($options = [])
+    public function __construct()
     {
-        $this->options = (object) array_merge([
-            'fieldgroups' => true,
-            'wpseo' => true,
-        ], $options);
-    }
-
-
-    public function init()
-    {
-        if ($this->options->fieldgroups) {
-            add_filter('acf/init', [$this, 'addAcfFieldgroup']);
-        }
-        if ($this->options->wpseo) {
+        if ($this->validateRequirements()) {
             add_filter('wpseo_opengraph_image', [$this, 'setOgImage']);
+            // Add options which are not overridable.
+            require_once __DIR__ . '/HeroComponent/acf-options-export.php';
         }
     }
 
@@ -35,8 +25,6 @@ class HeroComponent implements ComponentInterface
             $json = __DIR__ . '/HeroComponent/acf-hero-component.json';
             AcfFieldLoader::importFieldGroups($json, [self::$groupKey]);
         }
-        // Add options which are not overridable.
-        require_once __DIR__ . '/HeroComponent/acf-options-export.php';
     }
 
     public function setOgImage($image)
@@ -60,7 +48,7 @@ class HeroComponent implements ComponentInterface
 
     public function validateRequirements()
     {
-        $success = true;
+        $success = function_exists('get_field');
         if (!class_exists('acf_field_image_crop')) {
             add_action('admin_notices', function () {
                 // @codingStandardsIgnoreLine

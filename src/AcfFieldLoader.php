@@ -9,14 +9,6 @@ use acf_settings_tools;
  */
 class AcfFieldLoader
 {
-    public static function addAcfFieldgroup(ComponentInterface $component)
-    {
-        $component->init();
-        add_action('init', function () use ($component) {
-            $component->validateRequirements();
-        });
-    }
-
     public static function importFieldGroups($json_file, $keys)
     {
         if (!is_admin() || wp_doing_ajax() || defined('XMLRPC_REQUEST') || defined('IFRAME_REQUEST')) {
