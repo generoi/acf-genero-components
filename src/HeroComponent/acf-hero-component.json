@@ -5,7 +5,7 @@
         "fields": [
             {
                 "default_value": 1,
-                "message": "Crop the desktop images to a normalized height specified in the theme.",
+                "message": "Crop the images to a normalized height.",
                 "ui": 0,
                 "ui_on_text": "",
                 "ui_off_text": "",
@@ -87,18 +87,10 @@
                         }
                     },
                     {
-                        "force_crop": "no",
-                        "crop_type": "min",
-                        "preview_size": "thumbnail",
-                        "save_format": "url",
-                        "save_in_media_library": "no",
-                        "target_size": "thumbnail",
-                        "library": "all",
-                        "retina_mode": "no",
                         "key": "field_5841d45cad9b4",
                         "label": "Image",
                         "name": "slide_image",
-                        "type": "image_crop",
+                        "type": "image",
                         "instructions": "",
                         "required": 0,
                         "conditional_logic": [
@@ -115,8 +107,16 @@
                             "class": "",
                             "id": ""
                         },
-                        "width": "",
-                        "height": ""
+                        "return_format": "id",
+                        "preview_size": "thumbnail",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
                     },
                     {
                         "return_format": "id",

@@ -11,11 +11,13 @@ class HeroComponent implements ComponentInterface
 
     public function __construct()
     {
-        if ($this->validateRequirements()) {
-            add_filter('wpseo_opengraph_image', [$this, 'setOgImage']);
-            // Add options which are not overridable.
-            require_once __DIR__ . '/HeroComponent/acf-options-export.php';
-        }
+        add_action('acf/init', function () {
+            if ($this->validateRequirements()) {
+                add_filter('wpseo_opengraph_image', [$this, 'setOgImage']);
+                // Add options which are not overridable.
+                require_once __DIR__ . '/HeroComponent/acf-options-export.php';
+            }
+        });
     }
 
     public function addAcfFieldgroup()
@@ -48,14 +50,6 @@ class HeroComponent implements ComponentInterface
 
     public function validateRequirements()
     {
-        $success = function_exists('get_field');
-        if (!class_exists('acf_field_image_crop')) {
-            add_action('admin_notices', function () {
-                // @codingStandardsIgnoreLine
-                echo '<div class="error"><p><a href="https://wordpress.org/plugins/acf-image-crop-add-on/" target="_blank">ACF Image Crop</a> is required for the Hero feature.</p></div>';
-            });
-            $success = false;
-        }
-        return $success;
+        return function_exists('get_field');
     }
 }
