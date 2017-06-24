@@ -15,8 +15,31 @@ class ArchivePageComponent implements ComponentInterface
             add_filter('page_template_hierarchy', [$this, 'add_template_suggestions'], 9);
             add_action('post_type_archive_link', [$this, 'post_type_archive_link'], 10, 2);
             add_filter('timber/context', [$this, 'add_timber_context'], 9);
+
+            add_filter('manage_pages_columns', [$this, 'add_page_column']);
+            add_action('manage_pages_custom_column', [$this, 'add_page_column_content'], 10, 2);
+            add_action('admin_head', [$this, 'admin_head']);
             // Add options which are not overridable.
             require_once __DIR__ . '/ArchivePageComponent/acf-archivepage-component.php';
+        }
+    }
+
+    public function admin_head() {
+        echo '<style>th#is_archive { width: 100px; }</style>';
+    }
+
+    public function add_page_column($columns) {
+        $columns['is_archive'] = __('Archive', 'acf-genero-components');
+        return $columns;
+    }
+
+    public function add_page_column_content($column, $post_id) {
+        switch ($column) {
+            case 'is_archive':
+                if ($post_type = get_field('archive__post_type', $post_id)) {
+                    echo '<a href="' . admin_url("edit.php?post_type=$post_type") . '">' . $post_type . '</a>';
+                }
+                break;
         }
     }
 
