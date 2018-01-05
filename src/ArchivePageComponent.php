@@ -73,7 +73,6 @@ class ArchivePageComponent implements ComponentInterface
         }
 
         if ($post_type = get_field('archive__post_type', $object->ID)) {
-            $context['post'] = new Timber\Post($object);
             $context['posts'] = new Timber\PostQuery([
                 'post_type' => $post_type,
                 'posts_per_page' => get_field('archive__posts_per_page', $object->ID),
