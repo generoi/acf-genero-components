@@ -20,7 +20,9 @@ acf_add_local_field_group(array (
 				'id' => '',
 			),
 			'choices' => array (
-				'post' => 'Posts',
+				'Post type' => array(
+					'post_type:post' => 'Posts'
+				),
 			),
 			'default_value' => array (
 			),

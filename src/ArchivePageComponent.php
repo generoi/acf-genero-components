@@ -60,7 +60,24 @@ class ArchivePageComponent implements ComponentInterface
     public function add_template_suggestions($templates) {
         $post = get_post();
         if ($post && $archive = get_field('archive__post_type', $post)) {
-            array_splice($templates, 2, 0, ["archive-${archive}.php", "archive.php"]);
+
+            list($object_type, $object_name) = explode(':', $archive . ':');
+
+            // Backward compability
+            if (empty($object_name)) {
+                $object_name = $object_type;
+                $object_type = 'post_type';
+            }
+
+            switch ($object_type) {
+                case 'post_type':
+                    array_splice($templates, 2, 0, ["archive-${object_name}.php", "archive.php"]);
+                    break;
+
+                case 'taxonomy':
+                    array_splice($templates, 2, 0, ["terms-${object_name}.php", "terms.php"]);
+                    break;
+            }
         }
         return $templates;
     }
@@ -72,13 +89,34 @@ class ArchivePageComponent implements ComponentInterface
             return $context;
         }
 
-        if ($post_type = get_field('archive__post_type', $object->ID)) {
-            $context['posts'] = new Timber\PostQuery([
-                'post_type' => $post_type,
-                'posts_per_page' => get_field('archive__posts_per_page', $object->ID),
-                'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
-            ]);
+        if ($archive = get_field('archive__post_type', $object->ID)) {
+
+            list($object_type, $object_name) = explode(':', $archive . ':');
+
+            // Backward compability
+            if (empty($object_name)) {
+                $object_name = $object_type;
+                $object_type = 'post_type';
+            }
+
+            switch ($object_type) {
+                case 'post_type':
+                    $context['posts'] = new Timber\PostQuery([
+                        'post_type' => $object_name,
+                        'posts_per_page' => get_field('archive__posts_per_page', $object->ID),
+                        'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
+                    ]);
+                    break;
+
+                case 'taxonomy':
+                    $context['terms'] = Timber::get_terms([
+                        'taxonomy' => $object_name,
+                        'hide_empty' => true,
+                    ]);
+                    break;
+            }
         }
+
         return $context;
     }
 
@@ -90,8 +128,18 @@ class ArchivePageComponent implements ComponentInterface
         ], 'objects');
 
         foreach ($post_types as $post_type) {
-            $field['choices'][$post_type->name] = $post_type->label;
+            $field['choices']['Post type']['post_type:' . $post_type->name] = $post_type->label;
         }
+
+        $taxonomies = get_taxonomies([
+            'public' => true,
+            'show_ui' => true,
+        ], 'objects');
+
+        foreach ($taxonomies as $taxonomy) {
+            $field['choices']['Taxonomy']['taxonomy:' . $taxonomy->name] = $taxonomy->label;
+        }
+
         return $field;
     }
 
