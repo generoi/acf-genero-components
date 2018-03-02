@@ -105,6 +105,7 @@ class ArchivePageComponent implements ComponentInterface
                         'post_type' => $object_name,
                         'posts_per_page' => get_field('archive__posts_per_page', $object->ID),
                         'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
+                        'post_parent' => get_field('archive__parents_only', $object->ID) ? 0 : '',
                     ]);
                     break;
 
@@ -112,6 +113,7 @@ class ArchivePageComponent implements ComponentInterface
                     $context['terms'] = Timber::get_terms([
                         'taxonomy' => $object_name,
                         'hide_empty' => true,
+                        'parent' => get_field('archive__parents_only', $object->ID) ? 0 : '',
                     ]);
                     break;
             }

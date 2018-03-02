@@ -33,37 +33,53 @@ acf_add_local_field_group(array (
 			'return_format' => 'value',
 			'placeholder' => '',
 		),
-		array (
+		array(
 			'key' => 'field_593ff08d5ca2e',
 			'label' => 'Posts per page',
 			'name' => 'archive__posts_per_page',
 			'type' => 'text',
 			'instructions' => '',
 			'required' => 0,
-			'conditional_logic' => array (
-				array (
-					array (
-						'field' => 'field_593ff04d5ca2d',
-						'operator' => '!=',
-						'value' => '',
-					),
-				),
-			),
-			'wrapper' => array (
+			'conditional_logic' => 0,
+			'wrapper' => array(
 				'width' => '',
 				'class' => '',
 				'id' => '',
 			),
-			'default_value' => 10,
+			'default_value' => '',
 			'placeholder' => '',
 			'prepend' => '',
 			'append' => '',
 			'maxlength' => '',
 		),
+		array(
+			'key' => 'field_5a9911b97c11a',
+			'label' => 'Parents only',
+			'name' => 'archive__parents_only',
+			'type' => 'true_false',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'message' => '',
+			'default_value' => 0,
+			'ui' => 0,
+			'ui_on_text' => '',
+			'ui_off_text' => '',
+			'show_column' => 0,
+			'show_column_sortable' => 0,
+			'show_column_weight' => 1000,
+			'allow_quickedit' => 0,
+			'allow_bulkedit' => 0,
+		),
 	),
-	'location' => array (
-		array (
-			array (
+	'location' => array(
+		array(
+			array(
 				'param' => 'post_type',
 				'operator' => '==',
 				'value' => 'page',
