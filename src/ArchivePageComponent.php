@@ -117,6 +117,9 @@ class ArchivePageComponent implements ComponentInterface
                     ]);
                     break;
             }
+
+            // Override `archive__post_type` as it is used as a CSS class
+            $context['post']->archive__post_type = $object_name;
         }
 
         return $context;
