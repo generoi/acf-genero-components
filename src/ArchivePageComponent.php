@@ -106,6 +106,14 @@ class ArchivePageComponent implements ComponentInterface
                         'posts_per_page' => get_field('archive__posts_per_page', $object->ID),
                         'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
                         'post_parent' => get_field('archive__parents_only', $object->ID) ? 0 : '',
+                        'tax_query' => [
+                            [
+                                'taxonomy' => 'category',
+                                'field' => 'term_id',
+                                'terms' => get_field('archive__exclude_terms', $object->ID),
+                                'operator' => 'NOT IN',
+                            ],
+                        ],
                     ]);
                     break;
 
@@ -114,6 +122,7 @@ class ArchivePageComponent implements ComponentInterface
                         'taxonomy' => $object_name,
                         'hide_empty' => true,
                         'parent' => get_field('archive__parents_only', $object->ID) ? 0 : '',
+                        'exclude' => get_field('archive__exclude_terms', $object->ID),
                     ]);
                     break;
             }
