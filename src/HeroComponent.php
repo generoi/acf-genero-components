@@ -23,7 +23,7 @@ class HeroComponent implements ComponentInterface
     public function addAcfFieldgroup()
     {
         // Only save it if it doesn't exist, otherwise let themers edit it.
-        if (!_acf_get_field_group_by_key(self::$groupKey)) {
+        if (!acf_get_field_group(self::$groupKey)) {
             $json = __DIR__ . '/HeroComponent/acf-hero-component.json';
             AcfFieldLoader::importFieldGroups($json, [self::$groupKey]);
         }
