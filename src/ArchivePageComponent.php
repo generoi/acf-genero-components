@@ -71,11 +71,11 @@ class ArchivePageComponent implements ComponentInterface
 
             switch ($object_type) {
                 case 'post_type':
-                    array_splice($templates, 2, 0, ["archive-${object_name}.php", "archive.php"]);
+                    array_splice($templates, 2, 0, ["archive-{$object_name}.php", "archive.php"]);
                     break;
 
                 case 'taxonomy':
-                    array_splice($templates, 2, 0, ["terms-${object_name}.php", "terms.php"]);
+                    array_splice($templates, 2, 0, ["terms-{$object_name}.php", "terms.php"]);
                     break;
             }
         }
