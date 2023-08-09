@@ -42,6 +42,9 @@ class HeroComponent implements ComponentInterface
         }
         // Use the first hero slide's image if available.
         $hero = get_field('hero_slide', $object);
+        if (!empty($hero[0]['slide_image']['url'])) {
+            return $hero[0]['slide_image']['url'];
+        }
         if (!empty($hero[0]['slide_image'])) {
             return $hero[0]['slide_image'];
         }
